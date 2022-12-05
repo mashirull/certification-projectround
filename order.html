@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="left">
+            <div class="logo">
+                <img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="logo">
+                <h1>Kafene</h1>
+            </div>
+            <div class="menu-item">
+                <ul>
+                    <li class="active" ><a href="#" >Orders</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="user.html">Users</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="right">
+            <h3 id="logout"><a >logOut</a> </h3>
+        </div>
+
+    </div>
+
+    <section id="order_container">
+        <h1 class="heading">Orders</h1>
+        <div class="order_Wrapper">
+            <div class="filter">
+                <h3>Filter</h3>
+                <p>count: <span id="count">0</span></p>
+                <div class="checkbox">
+                    <input type="checkbox" name="new" id="new" checked>
+                    <label for="new">New</label>
+                </div>
+
+                <div class="checkbox">
+                    <input type="checkbox" name="packed" id="packed" checked>
+                    <label for="packed">Packed</label>
+
+                </div>
+
+                <div class="checkbox">
+                    <input type="checkbox" name="transit" id="transit" checked>
+                    <label for="transit">InTransit</label>
+
+                </div>
+
+                <div class="checkbox">
+                    <input type="checkbox" name="deliver" id="deliver" checked>
+                    <label for="deliver">Delivered</label>
+
+                </div>
+            </div>
+
+            <div class="order_list">
+                <table>
+                    <thead>
+
+                        <tr>
+                            <th>ID</th>
+                            <th>Customer</th>
+                            <th>Date</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                        <!-- <tr class="tbody_row">
+                            <td>65465</td>
+                            <td>mashirul</td>
+                            <td>1-21-2025 <p>11:25pm</p></td>
+                            <td>25000</td>
+                            <td>failed</td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="order.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="left">
+            <div class="logo">
+                <img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="logo">
+                <h1>Kafene</h1>
+            </div>
+            <div class="menu-item">
+                <ul>
+                    <li ><a href="order.html">Orders</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li class="active"><a href="#">Users</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="right">
+            <h3 id="logout"><a >logOut</a> </h3>
+        </div>
+
+
+    </div>
+
+    <section id="order_container">
+        <h1 class="heading">Users</h1>
+        <div class="order_Wrapper">
+           
+
+            <div class="order_list">
+                <table>
+                    <thead>
+
+                        <tr>
+                            <th>ID</th>
+                            <th>User avatar</th>
+                            <th>Full Name</th>
+                            <th>DoB</th>
+                            <th>Gender</th>
+                            <th>CurrentLocation</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                        <!-- <tr class="tbody_row">
+                            <td>65465</td>
+                            <td>mashirul</td>
+                            <td>1-21-2025 <p>11:25pm</p></td>
+                            <td>25000</td>
+                            <td>failed</td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        <!-- <img src="" alt=""> -->
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="user.js"></script>
+</body>
+</html>
